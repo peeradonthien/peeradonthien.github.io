@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peeradon Thien - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Devicon for tech stack logos -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">PT.</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle Theme">
+        <!-- Moon Icon -->
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <!-- Sun Icon -->
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-sun" style="display: none;">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="container reveal">
+      <div class="about-wrapper">
+        <div class="about-content">
+          <h1>Hi, I'm <br><span>Peeradon Thienpongkasem</span></h1>
+          <p>A Computer Engineering student with interests in Software Development, Software Testing, DevOps, and IoT
+            technologies.</p>
+        </div>
+        <div class="about-image">
+          <img src="profile.jpg" alt="Peeradon Thien" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="container reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <img src="pixelmath_logo.jpg" alt="Pixelmath Logo" class="company-logo">
+          <div class="timeline-content">
+            <h3>Intern Data Scientist</h3>
+            <h4>Pixelmath</h4>
+            <h4>Feb - Present 2026</h4>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="lineman_wongnai_logo.png" alt="Lineman Wongnai Logo" class="company-logo">
+          <div class="timeline-content">
+            <h3>Intern Software Engineer In Test</h3>
+            <h4>Lineman Wongnai</h4>
+            <h4>May - Present 2026</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container reveal">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <img src="chula_logo.png" alt="Chulalongkorn University Logo" class="company-logo">
+          <div class="timeline-content">
+            <h3>Chulalongkorn University</h3>
+            <h4>B.eng in Computer Engineering</h4>
+            <p>2023 - Present</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="kjn_logo.png" alt="Kanchanapisek Wittayalai Nakhon Pathom School Logo" class="company-logo">
+          <div class="timeline-content">
+            <h3>Kanchanapisek Wittayalai Nakhon Pathom School</h3>
+            <h4>GPAX : 3.97</h4>
+            <p>2018 - 2023</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="sarasas_logo.jpg" alt="Sarasas Pittaya School Logo" class="company-logo">
+          <div class="timeline-content">
+            <h3>Sarasas Pittaya School</h3>
+            <h4>GPAX : 4.00</h4>
+            <p>2013 - 2018</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container reveal">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="devicon-html5-plain colored tech-logo"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-css3-plain colored tech-logo"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-javascript-plain colored tech-logo"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-react-original colored tech-logo"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-nodejs-plain colored tech-logo"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-python-plain colored tech-logo"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-git-plain colored tech-logo"></i>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container reveal">
+      <h2>Featured Projects</h2>
+      <div id="projects-grid" class="projects-grid">
+        <!-- Projects injected via JS -->
+      </div>
+    </section>
+
+    <section id="competitions" class="container reveal">
+      <h2>Competitions</h2>
+      <div class="card competition-card">
+        <img src="rtipc_competition.png" alt="RTIPC Road Safety">
+        <div class="card-content">
+          <h3>RTIPC Road Safety</h3>
+          <p>More details coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container reveal">
+      <h2>Let's Connect</h2>
+      <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+      <div class="contact-links">
+        <a href="mailto:peeradonthienpongkasem@gmail.com" class="icon-link" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-mail">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/peeradonthien" target="_blank" rel="noopener noreferrer" class="icon-link"
+          aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-linkedin">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Peeradon Thienpongkasem. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
