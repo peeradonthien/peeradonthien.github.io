@@ -50,32 +50,4 @@ const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
 
 revealElements.forEach(el => revealObserver.observe(el));
 
-// Fetch GitHub Projects
-const GITHUB_USERNAME = 'peeradonthien';
-const projectsGrid = document.getElementById('projects-grid');
 
-async function fetchProjects() {
-    try {
-        const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=6`);
-        if (!response.ok) throw new Error('Network response was not ok');
-        const repos = await response.json();
-        
-        if (repos.length === 0) {
-            projectsGrid.innerHTML = '<p>No projects found.</p>';
-            return;
-        }
-
-        projectsGrid.innerHTML = repos.map(repo => `
-            <div class="card">
-                <h3>${repo.name}</h3>
-                <p>${repo.description || 'No description available.'}</p>
-                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="card-link">View Project →</a>
-            </div>
-        `).join('');
-    } catch (error) {
-        console.error('Error fetching projects:', error);
-        projectsGrid.innerHTML = '<p>Failed to load projects. Please try again later.</p>';
-    }
-}
-
-fetchProjects();
