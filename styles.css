@@ -284,6 +284,25 @@ h2 {
   margin-top: auto;
 }
 
+.button, .credential-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.button:hover, .credential-btn:hover {
+  opacity: 0.8;
+  color: var(--bg-color);
+}
+
 /* Competition Card */
 .competition-card {
   padding: 0;
