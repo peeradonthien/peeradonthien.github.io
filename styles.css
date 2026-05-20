@@ -28,6 +28,7 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 150px;
 }
 
 html {
@@ -97,24 +98,23 @@ nav {
 
 /* Sections */
 section {
-  padding: 100px 0;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 200px 0;
+  display: block;
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  margin-top: 5rem;
   font-weight: 800;
   letter-spacing: -1px;
 }
 
 /* About */
 #about {
-  min-height: 100vh;
+  min-height: 80vh;
 }
+
 
 .about-wrapper {
   display: flex;
@@ -284,7 +284,8 @@ h2 {
   margin-top: auto;
 }
 
-.button, .credential-btn {
+.button,
+.credential-btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
   background-color: var(--text-color);
@@ -298,7 +299,8 @@ h2 {
   margin-top: auto;
 }
 
-.button:hover, .credential-btn:hover {
+.button:hover,
+.credential-btn:hover {
   opacity: 0.8;
   color: var(--bg-color);
 }
@@ -376,6 +378,23 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
   .about-wrapper {
     flex-direction: column-reverse;
     text-align: center;
@@ -383,7 +402,22 @@ h2 {
   }
 
   .about-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .nav-links {
