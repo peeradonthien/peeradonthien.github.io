@@ -151,9 +151,11 @@ h2 {
 }
 
 .profile-img {
-  width: 100%;
+  width: 220px;
+  height: 220px;
   max-width: 400px;
-  border-radius: 12px;
+  border-radius: 50%;
+  object-fit: cover;
   /* filter: grayscale(100%); */
   border: 1px solid var(--border-color);
   transition: filter 0.3s ease;
